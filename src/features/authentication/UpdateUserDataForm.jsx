@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-/* eslint-disable */
-
 import Button from "../../ui/Button";
 import FileInput from "../../ui/FileInput";
 import Form from "../../ui/Form";
