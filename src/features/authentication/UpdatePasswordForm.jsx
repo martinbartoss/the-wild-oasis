@@ -42,7 +42,7 @@ function UpdatePasswordForm() {
         label="Confirm password"
         error={errors?.passwordConfirm?.message}
       >
-        <Inputs
+        <Input
           type="password"
           autoComplete="new-password"
           id="passwordConfirm"
