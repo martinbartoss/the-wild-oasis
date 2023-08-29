@@ -1,11 +1,18 @@
+import { styled } from "@tanstack/react-query-devtools/build/lib/utils";
 import { useForm } from "react-hook-form";
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 
-import Input from "../../ui/Input";
-
 import { useUpdateUser } from "./useUpdateUser";
+
+const Input = styled.input`
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-grey-0);
+  border-radius: var(--border-radius-sm);
+  padding: 0.5rem 1.2rem;
+  box-shadow: var(--shadow-sm);
+`;
 
 function UpdatePasswordForm() {
   const { register, handleSubmit, formState, getValues, reset } = useForm();
