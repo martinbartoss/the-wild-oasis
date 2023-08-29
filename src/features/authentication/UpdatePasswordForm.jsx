@@ -2,7 +2,8 @@ import { useForm } from "react-hook-form";
 import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
-import Inputs from "../../ui/Input";
+
+import Input from "../../../src/ui/Input";
 
 import { useUpdateUser } from "./useUpdateUser";
 
@@ -22,7 +23,7 @@ function UpdatePasswordForm() {
         label="Password (min 8 characters)"
         error={errors?.password?.message}
       >
-        <Inputs
+        <Input
           type="password"
           id="password"
           autoComplete="current-password"
